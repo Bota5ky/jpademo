@@ -1,0 +1,20 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.format_sql: true
+      hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    url: jdbc:mysql://localhost:3334/test
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  flyway:
+    enabled: true
+    encoding: utf-8
+    url: jdbc:mysql://localhost:3334
+    schemas: test
+    user: root
+    password: 123456
